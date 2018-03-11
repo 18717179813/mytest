@@ -16,7 +16,7 @@ import cn.itcast.springboot.service.NoticeService;
  * NoticeController
  * @author LEE.SIU.WAH
  * @email lixiaohua7@163.com
- * @date 2018年3月7日 下午7:04:03
+ * @date 2018骞�3鏈�7鏃� 涓嬪崍7:04:03
  * @version 1.0
  */
 @RestController
@@ -30,10 +30,11 @@ public class NoticeController {
 		return noticeService.findAll();
 	}
 	
-	/** 分页查询公告 */
+	/** 鍒嗛〉鏌ヨ鍏憡 */
 	@PostMapping("/findByPage")
 	public Map<String, Object> findByPage(@RequestParam("page")Integer page,
 			@RequestParam("rows")Integer rows){
+//		1111111111111111111111111
 		return noticeService.findByPage(page, rows);
 	}
 }
